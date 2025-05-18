@@ -1,0 +1,33 @@
+/* Products Page Styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.products-hero {
+  background-color: var(--light-color);
+  padding: 5rem 0;
+  text-align: center;
+  
+  h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+}
+
+.products-section {
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.custom-order-section {
+  background-color: white;
+  text-align: center;
+  padding: 4rem 0;
+  
+  & .custom-order-cta {
+    margin-top: 2rem;
+  }
+}

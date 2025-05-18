@@ -1,0 +1,54 @@
+/* Product Card */
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  h3 {
+    padding: 1rem 1rem 0.5rem;
+  }
+  
+  p {
+    padding: 0 1rem 1rem;
+    color: var(--gray-color);
+  }
+}
+
+/* Feature Card */
+.feature {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--light-color);
+  transition: var(--transition);
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
