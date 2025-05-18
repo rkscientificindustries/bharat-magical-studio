@@ -26,33 +26,26 @@ export function initImageModal() {
 
   // Function to open the modal
   function openModal(src, caption) {
-    modal.style.display = 'flex';
     modalImg.src = src;
     modalCaption.textContent = caption;
-
-    // Prevent scrolling on body when modal is open
-    document.body.style.overflow = 'hidden';
+    modal.showModal();
   }
 
   // Close modal when clicking the X
-  closeModal.addEventListener('click', closeImageModal);
+  closeModal.addEventListener('click', () => {
+    modal.close();
+  });
 
   // Close modal when clicking outside the image
   modal.addEventListener('click', function(event) {
-    if (event.target === modal) {
-      closeImageModal();
+    const rect = modal.getBoundingClientRect();
+    if (
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom
+    ) {
+      modal.close();
     }
   });
-
-  // Close modal with Escape key
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' && modal.style.display === 'flex') {
-      closeImageModal();
-    }
-  });
-
-  function closeImageModal() {
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
-  }
 }
