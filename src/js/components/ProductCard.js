@@ -4,24 +4,11 @@
  */
 
 export class ProductCard extends HTMLElement {
+  static observedAttributes = ['image', 'title', 'description'];
+
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-  }
-
-  connectedCallback() {
-    this.render();
-    this.addEventListeners();
-  }
-
-  static get observedAttributes() {
-    return ['image', 'title', 'description'];
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (this.shadowRoot.innerHTML !== '') {
-      this.render();
-    }
   }
 
   get image() {
@@ -34,6 +21,17 @@ export class ProductCard extends HTMLElement {
 
   get description() {
     return this.getAttribute('description') || '';
+  }
+
+  connectedCallback() {
+    this.render();
+    this.addEventListeners();
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (this.shadowRoot.innerHTML !== '') {
+      this.render();
+    }
   }
 
   render() {
@@ -51,10 +49,10 @@ export class ProductCard extends HTMLElement {
           overflow: hidden;
           box-shadow: var(--shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
           transition: all 0.3s ease;
-        }
-
-        .product-card:hover {
-          transform: translateY(-5px);
+        
+          &:hover {
+            transform: translateY(-5px);
+          }
         }
 
         .product-image {
@@ -93,8 +91,6 @@ export class ProductCard extends HTMLElement {
     productImage.addEventListener('click', () => {
       // Create a custom event that will be handled by the image modal
       const event = new CustomEvent('product-image-click', {
-        bubbles: true,
-        composed: true,
         detail: {
           src: this.image,
           alt: this.title

@@ -20,8 +20,11 @@ export function initImageModal() {
   });
 
   // Listen for custom events from product-card custom elements
-  document.addEventListener('product-image-click', function(event) {
-    openModal(event.detail.src, event.detail.alt);
+  const productCards = document.querySelectorAll('product-card');
+  productCards.forEach(card => {
+    card.addEventListener('product-image-click', (event) => {
+      openModal(event.detail.src, event.detail.alt);
+    });
   });
 
   // Function to open the modal
