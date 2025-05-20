@@ -13,7 +13,7 @@ A responsive website for Chhapak, the laser printing services brand by R.K. Scie
 
 1. Clone the repository
    ```
-   git clone <repository-url>
+   git clone https://github.com/rkscientificindustries/website
    cd website
    ```
 
@@ -25,11 +25,6 @@ A responsive website for Chhapak, the laser printing services brand by R.K. Scie
 3. Start the development server
    ```
    npm run dev
-   ```
-
-4. Build for production
-   ```
-   npm run build
    ```
 
 ## Customization
