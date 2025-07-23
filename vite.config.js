@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
   // Base public path when served in production
-  base: '/',
+  base: '/bharat-magical-studio/',
   
   // Configure server options
   server: {
@@ -48,7 +48,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
       '@scripts': fileURLToPath(new URL('./src/scripts', import.meta.url)),
       '@styles': fileURLToPath(new URL('./src/styles', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
