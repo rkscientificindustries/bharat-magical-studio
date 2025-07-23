@@ -1,37 +1,26 @@
-/**
- * Product Card Custom Element
- * A reusable web component for displaying product cards
- */
-
 export class ProductCard extends HTMLElement {
-  static observedAttributes = ['image', 'title', 'description'];
+  static observedAttributes = ["image", "title", "description"];
 
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
   }
 
   get image() {
-    return this.getAttribute('image') || '';
+    return this.getAttribute("image") || "";
   }
 
   get title() {
-    return this.getAttribute('title') || '';
+    return this.getAttribute("title") || "";
   }
 
   get description() {
-    return this.getAttribute('description') || '';
+    return this.getAttribute("description") || "";
   }
 
   connectedCallback() {
     this.render();
     this.addEventListeners();
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (this.shadowRoot.innerHTML !== '') {
-      this.render();
-    }
   }
 
   render() {
@@ -65,7 +54,6 @@ export class ProductCard extends HTMLElement {
         h3 {
           padding: 1rem 1rem 0.5rem;
           margin: 0;
-          font-family: 'Montserrat', sans-serif;
           font-weight: 600;
         }
 
@@ -78,7 +66,7 @@ export class ProductCard extends HTMLElement {
       </style>
 
       <div class="product-card">
-        <img src="${this.image}" alt="${this.title}" class="product-image">
+        <img src="${this.image}" alt="${this.title}" loading="lazy" class="product-image">
         <h3>${this.title}</h3>
         <p>${this.description}</p>
       </div>
@@ -86,15 +74,15 @@ export class ProductCard extends HTMLElement {
   }
 
   addEventListeners() {
-    const productImage = this.shadowRoot.querySelector('.product-image');
+    const productImage = this.shadowRoot.querySelector(".product-image");
 
-    productImage.addEventListener('click', () => {
+    productImage.addEventListener("click", () => {
       // Create a custom event that will be handled by the image modal
-      const event = new CustomEvent('product-image-click', {
+      const event = new CustomEvent("product-image-click", {
         detail: {
           src: this.image,
-          alt: this.title
-        }
+          alt: this.title,
+        },
       });
 
       this.dispatchEvent(event);
@@ -103,4 +91,4 @@ export class ProductCard extends HTMLElement {
 }
 
 // Define the custom element
-customElements.define('product-card', ProductCard);
+customElements.define("product-card", ProductCard);

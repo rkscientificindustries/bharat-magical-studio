@@ -1,175 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chhapak - R.K. Scientific Industries</title>
-  <link rel="stylesheet" href="/src/styles/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="/images/logo.svg" alt="Chhapak Logo" class="logo-image">
-        <p class="tagline">Laser Printing Services</p>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chhapak - R.K. Scientific Industries</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <app-header></app-header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h2>Custom Laser Printing Solutions</h2>
-          <p>Personalize your gifts and products with our premium laser printing services</p>
-          <a href="products.html" class="btn btn-primary">Explore Products</a>
-        </div>
-        <div class="hero-slider">
-          <div class="hero-slider-container">
-            <div class="slide">
-              <img src="/images/product-1.svg" alt="Custom Water Bottle" class="product-image">
-              <div class="slide-caption">Custom Water Bottles</div>
+    <main>
+      <section id="home" class="hero py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="display-5 fw-bold text-primary mb-3">
+                Custom Laser Printing Solutions
+              </h2>
+              <p class="lead mb-4">
+                Personalize your gifts and products with our premium laser
+                printing services
+              </p>
+              <a href="#" class="btn btn-primary btn-lg"
+                >Explore Products</a
+              >
             </div>
-            <div class="slide">
-              <img src="/images/product-2.svg" alt="Custom Pen" class="product-image">
-              <div class="slide-caption">Personalized Pens</div>
+            <div class="col-lg-6">
+              <div class="hero-slider">
+                <div class="hero-slider-container">
+                  <div class="slide">
+                    <img
+                      src="src/assets/BOT 09.jpg"
+                      alt="Custom Water Bottle"
+                      class="shadow"
+                      style="cursor: pointer; object-fit: contain;"
+                    />
+                    <div class="slide-caption">Custom Water Bottles</div>
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="src/assets/Plastic Pen-46.jpg"
+                      alt="Custom Pen"
+                      class="shadow"
+                      style="cursor: pointer; object-fit: contain;"
+                    />
+                    <div class="slide-caption">Personalized Pens</div>
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="src/assets/pencil-1.jpeg"
+                      alt="Custom Pencil"
+                      class="img-fluid rounded shadow"
+                      style="cursor: pointer"
+                    />
+                    <div class="slide-caption">Engraved Pencils</div>
+                  </div>
+                </div>
+                <div class="hero-slider-controls">
+                  <button class="prev-btn" aria-label="Previous slide">
+                    &#10094;
+                  </button>
+                  <button class="next-btn" aria-label="Next slide">
+                    &#10095;
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="slide">
-              <img src="/images/product-3.svg" alt="Custom Pencil" class="product-image">
-              <div class="slide-caption">Engraved Pencils</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5 bg-white text-center">
+        <h2 class="mb-3 text-primary">Precision in Every Print</h2>
+        <p class="lead mb-5">
+          Our newest laser technology brings your ideas to life with unmatched
+          detail and permanence.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="display-6 text-success mb-2">✓</div>
+                <h3 class="h5 mb-2">Premium Quality</h3>
+                <p class="mb-0">High-resolution laser engraving that lasts</p>
+              </div>
             </div>
           </div>
-          <div class="hero-slider-controls">
-            <button class="prev-btn" aria-label="Previous slide">&#10094;</button>
-            <button class="next-btn" aria-label="Next slide">&#10095;</button>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="display-6 text-success mb-2">✓</div>
+                <h3 class="h5 mb-2">Custom Designs</h3>
+                <p class="mb-0">
+                  Personalize with your own text, logos, or images
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="display-6 text-success mb-2">✓</div>
+                <h3 class="h5 mb-2">Quick Turnaround</h3>
+                <p class="mb-0">Fast processing and delivery for your orders</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="tagline-section">
-      <div class="container">
-        <h2>Precision in Every Print</h2>
-        <p class="tagline-text">Our newest laser technology brings your ideas to life with unmatched detail and permanence.</p>
-        <div class="features">
-          <div class="feature">
-            <div class="feature-icon">✓</div>
-            <h3>Premium Quality</h3>
-            <p>High-resolution laser engraving that lasts</p>
+      <section id="products" class="container bg-white py-5 text-center">
+        <h2 class="mb-4 text-primary">Featured Products</h2>
+        <div class="position-relative mb-4">
+          <div
+            class="d-flex flex-nowrap overflow-auto gap-4 px-2"
+            style="scroll-behavior: smooth"
+            id="productSliderContainer"
+          >
+            <product-card
+              image="src/assets/BOT 08.jpg"
+              title="Water Bottle BOT 08"
+              description="Stainless steel bottle with custom laser engraving"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/BOT 09.jpg"
+              title="Water Bottle BOT 09"
+              description="Premium water bottle with personalized design"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/BOT 15.jpg"
+              title="Water Bottle BOT 15"
+              description="Durable bottle with custom printing options"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/BOT 19.jpg"
+              title="Water Bottle BOT 19"
+              description="High-quality bottle for custom engraving"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/BOT 32.jpg"
+              title="Water Bottle BOT 32"
+              description="Professional grade bottle with laser printing"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/Cardholder-1.jpg"
+              title="Card Holder"
+              description="Premium leather cardholder with custom engraving"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/Cardholder-2.jpg"
+              title="Business Card Holder"
+              description="Professional cardholder with personalized design"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/Cardholder-3.jpg"
+              title="Executive Card Holder"
+              description="Elegant cardholder with laser engraving options"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/JB 04 Zipper Small.jpg"
+              title="Small Zipper Bag"
+              description="Compact zipper bag with custom printing"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/JB 05 Zipper Big.jpg"
+              title="Large Zipper Bag"
+              description="Spacious zipper bag with personalized design"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/Keychains KC-1.jpg"
+              title="Keychain KC-1"
+              description="Metal keychain with custom laser engraving"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/Keychains KC-2.jpg"
+              title="Keychain KC-2"
+              description="Premium keychain with personalized text"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/MP-13.jpg"
+              title="Metal Plate MP-13"
+              description="Engraved metal plate for custom applications"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/MP-78.jpg"
+              title="Metal Plate MP-78"
+              description="High-quality metal plate with laser printing"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/MUG 01.jpg"
+              title="Coffee Mug"
+              description="Ceramic mug with custom laser engraving"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/MUG 23.jpg"
+              title="Premium Mug"
+              description="High-quality mug with personalized design"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/Plastic Pen-46.jpg"
+              title="Plastic Pen"
+              description="Custom plastic pen with laser printing"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/pencil-1.jpeg"
+              title="Wooden Pencil"
+              description="Natural wood pencil with custom engraving"
+            >
+            </product-card>
+            <product-card
+              image="src/assets/pencil-2.jpeg"
+              title="Premium Pencil"
+              description="High-grade pencil with personalized marking"
+            >
+            </product-card>
           </div>
-          <div class="feature">
-            <div class="feature-icon">✓</div>
-            <h3>Custom Designs</h3>
-            <p>Personalize with your own text, logos, or images</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">✓</div>
-            <h3>Quick Turnaround</h3>
-            <p>Fast processing and delivery for your orders</p>
-          </div>
+          <button
+            class="prev-btn position-absolute top-50 start-0 translate-middle-y"
+            style="z-index: 2"
+            id="productSliderPrev"
+            aria-label="Previous product"
+          >
+            &#10094;
+          </button>
+          <button
+            class="next-btn position-absolute top-50 end-0 translate-middle-y"
+            style="z-index: 2"
+            id="productSliderNext"
+            aria-label="Next product"
+          >
+            &#10095;
+          </button>
         </div>
-      </div>
-    </section>
+        <a href="#" class="btn btn-primary">View All Products</a>
+      </section>
+    </main>
 
-    <section id="products" class="sample-products">
-      <div class="container">
-        <h2>Featured Products</h2>
-        <div class="product-slider">
-          <div class="product-slider-container">
-            <product-card 
-              image="/images/product-1.svg" 
-              title="Water Bottles" 
-              description="Stainless steel bottles with custom engraving">
-            </product-card>
-            <product-card 
-              image="/images/product-2.svg" 
-              title="Premium Pens" 
-              description="Elegant pens with personalized messages">
-            </product-card>
-            <product-card 
-              image="/images/product-3.svg" 
-              title="Wooden Pencils" 
-              description="Eco-friendly pencils with custom designs">
-            </product-card>
-            <product-card 
-              image="/images/keychain.svg" 
-              title="Keychains" 
-              description="Metal keychains with intricate engravings">
-            </product-card>
-            <product-card 
-              image="/images/product-4.svg" 
-              title="Photo Frames" 
-              description="Custom engraved photo frames for special memories">
-            </product-card>
-            <product-card 
-              image="/images/product-5.svg" 
-              title="Engraved Notebooks" 
-              description="Personalized notebooks with custom designs">
-            </product-card>
-            <product-card 
-              image="/images/product-6.svg" 
-              title="Custom Badges" 
-              description="Professional badges with laser-etched details">
-            </product-card>
-            <product-card 
-              image="/images/product-7.svg" 
-              title="Business Card Holders" 
-              description="Elegant card holders with personalized engravings">
-            </product-card>
-          </div>
-          <div class="product-slider-controls">
-            <button class="prev-btn" aria-label="Previous product">&#10094;</button>
-            <button class="next-btn" aria-label="Next product">&#10095;</button>
-          </div>
-        </div>
-        <div class="view-all-products">
-          <a href="products.html" class="btn btn-primary">View All Products</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <app-footer></app-footer>
 
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-about">
-          <h3>About R.K. Scientific Industries</h3>
-          <p>R.K. Scientific Industries is a leading provider of laser printing services under the brand name "Chhapak". We specialize in customized products for personal use and gifting.</p>
-        </div>
-        <div class="footer-contact">
-          <h3>Contact Us</h3>
-          <p>Email: info@rkscientific.com</p>
-          <p>Phone: +91 1234567890</p>
-          <p>Address: 123 Industrial Area, City, State, India</p>
-        </div>
-        <div class="footer-map">
-          <h3>Find Us</h3>
-          <div id="map" class="google-map"></div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2023 R.K. Scientific Industries. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <dialog id="imageModal" class="image-dialog">
-    <button class="close-modal" aria-label="Close">&times;</button>
-    <img class="modal-content" id="modalImage" src="" alt="Product Image">
-    <div id="modalCaption"></div>
-  </dialog>
-
-  <script type="module" src="/src/js/main.js"></script>
-</body>
+    <dialog id="productModal" class="product-modal" closedby="any">
+      <button class="close-modal" aria-label="Close">&times;</button>
+      <img class="modal-content" id="modalImage" src="" alt="Product Image" />
+      <div id="modalCaption"></div>
+    </dialog>
+  </body>
 </html>

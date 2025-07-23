@@ -1,5 +1,5 @@
 {
-  "name": "chhapak-website",
+  "name": "bharat-magical-studio",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -7,15 +7,29 @@
     "dev": "vite",
     "host": "vite --host",
     "build": "vite build",
+    "build:prod": "NODE_ENV=production vite build",
+    "build:analyze": "vite build && npx vite-bundle-analyzer dist/stats.html",
     "preview": "vite preview",
+    "preview:host": "vite preview --host",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.css",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:css": "stylelint 'src/**/*.{css,scss}'",
+    "format": "prettier --write 'src/**/*.{js,ts,css,scss,html}'",
+    "format:check": "prettier --check 'src/**/*.{js,ts,css,scss,html}'",
+    "clean": "rm -rf dist node_modules/.vite",
+    "serve": "npm run build && npm run preview"
   },
   "devDependencies": {
     "@eslint/css": "^0.8.1",
     "@eslint/js": "^9.27.0",
     "eslint": "^9.27.0",
     "globals": "^16.1.0",
-    "vite": "^6.3.5"
+    "prettier": "^3.6.2",
+    "sass": "^1.89.2",
+    "vite": "^7.0.5"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.7"
   }
 }

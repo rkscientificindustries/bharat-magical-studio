@@ -1,6 +1,6 @@
-# Chhapak - R.K. Scientific Industries Website
+# Bharat Magical Studio
 
-A responsive website for Chhapak, the laser printing services brand by R.K. Scientific Industries.
+The laser printing services brand by R.K. Scientific Industries.
 
 ## Getting Started
 
@@ -26,17 +26,6 @@ A responsive website for Chhapak, the laser printing services brand by R.K. Scie
    ```
    npm run dev
    ```
-
-## Customization
-
-### Google Maps API
-
-To use the Google Maps functionality, replace the placeholder API key in `src/js/main.js` with your actual Google Maps API key:
-
-```javascript
-script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
-```
-
 ## Acknowledgments
 
 - Developed for R.K. Scientific Industries

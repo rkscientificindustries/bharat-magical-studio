@@ -1,156 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Chhapak - R.K. Scientific Industries</title>
-  <link rel="stylesheet" href="/src/styles/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="/images/logo.svg" alt="Chhapak Logo" class="logo-image">
-        <p class="tagline">Laser Printing Services</p>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="index.html#footer">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Chhapak - R.K. Scientific Industries</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <app-header></app-header>
 
-  <main>
-    <section class="about-hero">
-      <div class="container">
-        <h1>About R.K. Scientific Industries</h1>
-        <p class="tagline-text">Pioneering Laser Printing Technology Since 2021</p>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="container">
-        <h2>Our Story</h2>
-        <div class="about-content">
-          <p>R.K. Scientific Industries was founded in 1965 with "Chhapak" brand in 2022 with a vision to revolutionize the personalization industry through cutting-edge laser printing technology. What started as a small workshop in Ambala has now grown into a leading provider of custom laser printing services across India.</p>
-          <p>Our brand "Chhapak" was launched in 2015 to cater specifically to the growing demand for personalized gifts and products. The name "Chhapak" (meaning "impression" in Hindi) represents our commitment to making a lasting impression through our quality products and services.</p>
-          <p>Over the years, we have invested in state-of-the-art laser technology and skilled craftsmen to deliver products that exceed customer expectations. Our dedication to quality, innovation, and customer satisfaction has made us a trusted name in the industry.</p>
+    <main>
+      <section class="bg-light py-5 text-center">
+        <div class="container">
+          <h1>About R.K. Scientific Industries</h1>
+          <p class="lead">Pioneering Laser Printing Technology Since 2021</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about-section">
-      <div class="container">
-        <h2>Our Team</h2>
-        <p class="tagline-text">Meet the people behind R.K. Scientific Industries</p>
-        <div class="team-members">
-          <div class="team-member">
-            <img src="/images/owner-1.svg" alt="Ved Parkash">
-            <h3>Ved Parkash</h3>
-            <p class="designation">Founder & CEO</p>
-            <p>With over 20 years of experience in manufacturing and technology, Rajesh leads our company with a passion for innovation and excellence. His vision drives our continuous growth and expansion.</p>
-          </div>
-          <div class="team-member">
-            <img src="/images/owner-2.svg" alt="Divakar Dhiman">
-            <h3>Divakar Dhiman</h3>
-            <p class="designation">Co-Founder & CTO</p>
-            <p>Kamal brings his technical expertise in laser technology and materials science to ensure that our products meet the highest standards of quality and durability. He oversees all technical operations and R&D initiatives.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="container">
-        <h2>Our Journey</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>1965</h3>
-              <p>R.K. Scientific Industries was founded in Ambala Cantt, India</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2021</h3>
-              <p>Expanded operations to include custom laser engraving services</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2022</h3>
-              <p>Launched the "Chhapak" brand for personalized products</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2023</h3>
-              <p>Created our own custom laser engraving machine</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2024</h3>
-              <p>Expanded our online presence with e-commerce capabilities</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>2025</h3>
-              <p>Celebrating over a decade of excellence with new product lines</p>
+      <section class="py-5">
+        <div class="container">
+          <h2>Our Story</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                R.K. Scientific Industries was founded in 1965 with "Chhapak"
+                brand in 2022 with a vision to revolutionize the personalization
+                industry through cutting-edge laser printing technology. What
+                started as a small workshop in Ambala has now grown into a
+                leading provider of custom laser printing services across India.
+              </p>
+              <p>
+                Our brand "Chhapak" was launched in 2015 to cater specifically
+                to the growing demand for personalized gifts and products. The
+                name "Chhapak" (meaning "impression" in Hindi) represents our
+                commitment to making a lasting impression through our quality
+                products and services.
+              </p>
+              <p>
+                Over the years, we have invested in state-of-the-art laser
+                technology and skilled craftsmen to deliver products that exceed
+                customer expectations. Our dedication to quality, innovation,
+                and customer satisfaction has made us a trusted name in the
+                industry.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about-section">
-      <div class="container">
-        <h2>Our Mission</h2>
-        <div class="about-content">
-          <p>At R.K. Scientific Industries, our mission is to provide high-quality personalized products that help our customers express their individuality and create lasting memories. We are committed to:</p>
-          <ul>
-            <li>Using the latest technology to deliver superior quality products</li>
-            <li>Providing exceptional customer service and support</li>
-            <li>Maintaining environmentally sustainable practices</li>
-            <li>Continuously innovating and expanding our product offerings</li>
-           </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2>Our Team</h2>
+          <p class="lead text-center">
+            Meet the people behind R.K. Scientific Industries
+          </p>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-25"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0Zm-5-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM8 9c-1.825 0-3.422.977-4.295 2.437A5.49 5.49 0 0 0 8 13.5a5.49 5.49 0 0 0 4.294-2.063A4.997 4.997 0 0 0 8 9Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <h3>Ved Parkash</h3>
+              <p class="text-muted">Founder & CEO</p>
+              <p>
+                With over 20 years of experience in manufacturing and
+                technology, Ved Parkash leads our company with a passion for
+                innovation and excellence. His vision drives our continuous
+                growth and expansion.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-25"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0Zm-5-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM8 9c-1.825 0-3.422.977-4.295 2.437A5.49 5.49 0 0 0 8 13.5a5.49 5.49 0 0 0 4.294-2.063A4.997 4.997 0 0 0 8 9Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
 
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-about">
-          <h3>About R.K. Scientific Industries</h3>
-          <p>R.K. Scientific Industries is a leading provider of laser printing services under the brand name "Chhapak". We specialize in customized products for personal use and gifting.</p>
+              <h3>Divakar Dhiman</h3>
+              <p class="text-muted">Co-Founder & CTO</p>
+              <p>
+                Divakar brings his technical expertise in laser technology and
+                materials science to ensure that our products meet the highest
+                standards of quality and durability. He oversees all technical
+                operations and R&D initiatives.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="footer-contact">
-          <h3>Contact Us</h3>
-          <p>Email: info@rkscientificindustries.com</p>
-          <p>Phone: +91 1234567890</p>
-          <p>Address: 123 Industrial Area, City, State, India</p>
-        </div>
-        <div class="footer-map">
-          <h3>Find Us</h3>
-          <div id="map" class="google-map"></div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 R.K. Scientific Industries. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+      </section>
 
-  <script type="module" src="/src/js/main.js"></script>
-</body>
+      <section class="py-5">
+        <div class="container">
+          <h2>Our Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>1965</h3>
+                <p>
+                  R.K. Scientific Industries was founded in Ambala Cantt, India
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2021</h3>
+                <p>
+                  Expanded operations to include custom laser engraving services
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2022</h3>
+                <p>Launched the "Chhapak" brand for personalized products</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2023</h3>
+                <p>Created our own custom laser engraving machine</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2024</h3>
+                <p>Expanded our online presence with e-commerce capabilities</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h3>2025</h3>
+                <p>
+                  Celebrating over a decade of excellence with new product lines
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2>Our Mission</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                At R.K. Scientific Industries, our mission is to provide
+                high-quality personalized products that help our customers
+                express their individuality and create lasting memories. We are
+                committed to:
+              </p>
+              <ul>
+                <li>
+                  Using the latest technology to deliver superior quality
+                  products
+                </li>
+                <li>Providing exceptional customer service and support</li>
+                <li>Maintaining environmentally sustainable practices</li>
+                <li>
+                  Continuously innovating and expanding our product offerings
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <app-footer></app-footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>
