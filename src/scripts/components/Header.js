@@ -8,8 +8,8 @@ class Header extends HTMLElement {
       <header class="bg-white shadow-sm sticky-top">
         <div class="container d-flex justify-content-between align-items-center py-2">
           <div class="d-flex align-items-center">
-            <img src="/images/logo.jpeg" alt="Logo" class="img-fluid me-2" style="height:48px;object-fit:contain;"/>
-            <img src="/images/brand-name.jpeg" alt="Brarat Magical Studio" class="img-fluid" style="height:38px;object-fit:contain;"/>
+            <img src="images/logo.jpeg" alt="Logo" class="img-fluid me-2" style="height:48px;object-fit:contain;"/>
+            <img src="images/brand-name.jpeg" alt="Brarat Magical Studio" class="img-fluid" style="height:38px;object-fit:contain;"/>
           </div>
           <nav>
             <ul class="nav">

@@ -17,8 +17,7 @@
     "format": "prettier --write 'src/**/*.{js,ts,css,scss,html}'",
     "format:check": "prettier --check 'src/**/*.{js,ts,css,scss,html}'",
     "clean": "rm -rf dist node_modules/.vite",
-    "serve": "npm run build && npm run preview",
-    "deploy": "vite build && npx vite-plugin-gh-pages"
+    "serve": "npm run build && npm run preview"
   },
   "devDependencies": {
     "@eslint/css": "^0.8.1",
@@ -27,8 +26,7 @@
     "globals": "^16.1.0",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
-    "vite": "^7.0.5",
-    "vite-plugin-gh-pages": "^1.0.1"
+    "vite": "^7.0.5"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
